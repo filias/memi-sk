@@ -1,0 +1,14 @@
+[Unit]
+Description=Memi Slovensko deploy webhook
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/memi-sk
+EnvironmentFile=/etc/memi-sk-webhook.env
+ExecStart=/opt/memi-sk/.venv/bin/python deploy/webhook.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

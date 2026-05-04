@@ -1,0 +1,85 @@
+"""Pamiatky — historic monuments and landmarks of Slovakia."""
+
+PAMIATKY = [
+    # Castles
+    "Bratislavský hrad",
+    "Hrad Devín",
+    "Bojnický zámok",
+    "Oravský hrad",
+    "Trenčiansky hrad",
+    "Strečniansky hrad",
+    "Smolenický zámok",
+    "Lietavský hrad",
+    "Beckovský hrad",
+    "Čachtický hrad",
+    "Šarišský hrad",
+    # UNESCO sites
+    "Banská Štiavnica",
+    "Vlkolínec",
+    "Levoča",
+    # Cathedrals & churches
+    "Dóm svätej Alžbety",
+    "Drevené chrámy slovenskej časti Karpatského oblúka",
+    # Bratislava landmarks
+    "Stará radnica v Bratislave",
+    "Most SNP",
+    "Michalova brána",
+    "Slavín",
+    "Slovenské národné divadlo",
+    # Caves
+    "Demänovská jaskyňa slobody",
+    "Ochtinská aragonitová jaskyňa",
+]
+
+WIKIPEDIA = {
+    "Bratislavský hrad": "Bratislava Castle",
+    "Hrad Devín": "Devín Castle",
+    "Bojnický zámok": "Bojnice Castle",
+    "Oravský hrad": "Orava Castle",
+    "Trenčiansky hrad": "Trenčín Castle",
+    "Strečniansky hrad": "Strečno Castle",
+    "Smolenický zámok": "Smolenice Castle",
+    "Lietavský hrad": "Lietava Castle",
+    "Beckovský hrad": "Beckov Castle",
+    "Čachtický hrad": "Čachtice Castle",
+    "Šarišský hrad": "Šariš Castle",
+    "Banská Štiavnica": "Banská Štiavnica",
+    "Vlkolínec": "Vlkolínec",
+    "Levoča": "Levoča",
+    "Dóm svätej Alžbety": "Cathedral of St. Elizabeth",
+    "Drevené chrámy slovenskej časti Karpatského oblúka": "Wooden churches of the Slovak Carpathians",
+    "Stará radnica v Bratislave": "Old Town Hall (Bratislava)",
+    "Most SNP": "Most SNP",
+    "Michalova brána": "Michael's Gate",
+    "Slavín": "Slavín",
+    "Slovenské národné divadlo": "Slovak National Theatre",
+    "Demänovská jaskyňa slobody": "Demänovská Cave of Liberty",
+    "Ochtinská aragonitová jaskyňa": "Ochtinská Aragonite Cave",
+}
+
+# City — used as the tag
+MESTA = {
+    "Bratislavský hrad": "Bratislava",
+    "Hrad Devín": "Bratislava",
+    "Stará radnica v Bratislave": "Bratislava",
+    "Most SNP": "Bratislava",
+    "Michalova brána": "Bratislava",
+    "Slavín": "Bratislava",
+    "Slovenské národné divadlo": "Bratislava",
+    "Bojnický zámok": "Bojnice",
+    "Oravský hrad": "Oravský Podzámok",
+    "Trenčiansky hrad": "Trenčín",
+    "Strečniansky hrad": "Strečno",
+    "Smolenický zámok": "Smolenice",
+    "Lietavský hrad": "Lietava",
+    "Beckovský hrad": "Beckov",
+    "Čachtický hrad": "Čachtice",
+    "Šarišský hrad": "Veľký Šariš",
+    "Banská Štiavnica": "Banská Štiavnica",
+    "Vlkolínec": "Ružomberok",
+    "Levoča": "Levoča",
+    "Dóm svätej Alžbety": "Košice",
+    "Drevené chrámy slovenskej časti Karpatského oblúka": "východné Slovensko",
+    "Demänovská jaskyňa slobody": "Demänovská Dolina",
+    "Ochtinská aragonitová jaskyňa": "Ochtiná",
+}

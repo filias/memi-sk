@@ -1,0 +1,13 @@
+[Unit]
+Description=Memi Slovensko
+After=network.target
+
+[Service]
+User=memi
+WorkingDirectory=/opt/memi-sk
+ExecStart=/opt/memi-sk/.venv/bin/gunicorn memi_sk.app:app --bind 127.0.0.1:8087 --workers 2
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
