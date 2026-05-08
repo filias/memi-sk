@@ -10,6 +10,7 @@ import memi_sk.providers  # noqa: F401
 config = MemiConfig(
     title="memi slovensko",
     subtitle="precvič si pamäť",
+    favicon_color="#0B4EA2",
     themes=["light", "blue", "red", "dark"],
     default_theme="light",
     sponsor_url="https://github.com/sponsors/filias",
