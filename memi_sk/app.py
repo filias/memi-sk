@@ -34,12 +34,12 @@ config = MemiConfig(
             <li><strong>nápovedy:</strong> zapne postupné nápovedy
             písmen &mdash; najprv odhalí prvé písmeno, potom ďalšie, a
             tak ďalej. Užitočné, keď máš odpoveď na jazyku.</li>
-            <li><strong>nahlásiť:</strong> označ kartu, ak obrázok
-            nezodpovedá odpovedi (zlý obrázok, rozbitá miniatúra a
-            podobne).</li>
             <li><strong>zistiť viac:</strong> objaví sa pri odhalení a
             otvorí článok na Wikipédii (alebo zdrojovú stránku) k
             položke, aby si si o nej mohol prečítať viac.</li>
+            <li><strong>nahlásiť:</strong> označ kartu, ak obrázok
+            nezodpovedá odpovedi (zlý obrázok, rozbitá miniatúra a
+            podobne).</li>
         </ul>
         <p>Hrať sa dá dvoma spôsobmi:</p>
         <ul>
