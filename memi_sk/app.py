@@ -21,11 +21,51 @@ config = MemiConfig(
     ],
     label_related_sites="ďalšie hry memi",
     about_html="""
-        <p>Memi Slovensko je pamäťová hra o Slovensku.</p>
+        <p>Memi Slovensko je pamäťová hra o Slovensku. Kraje, pamiatky,
+        jedlá, slávne osobnosti &mdash; vždy je čo nové objaviť alebo si
+        pripomenúť.</p>
+
+        <h2>Ako hrať</h2>
         <p>Vyber kategóriu, pozri sa na obrázok a skús uhádnuť, čo to je,
-        skôr než odhalíš odpoveď.</p>
-        <p>Kraje, pamiatky, jedlá, slávne osobnosti — vždy je čo nové
-        objaviť alebo si pripomenúť.</p>
+        skôr než odhalíš odpoveď. Žiadne účty, žiadne body, žiadny časový
+        limit.</p>
+        <p>V spodnej lište nájdeš niekoľko pomocníkov:</p>
+        <ul>
+            <li><strong>nápovedy:</strong> zapne postupné nápovedy
+            písmen &mdash; najprv odhalí prvé písmeno, potom ďalšie, a
+            tak ďalej. Užitočné, keď máš odpoveď na jazyku.</li>
+            <li><strong>nahlásiť:</strong> označ kartu, ak obrázok
+            nezodpovedá odpovedi (zlý obrázok, rozbitá miniatúra a
+            podobne).</li>
+            <li><strong>zistiť viac:</strong> objaví sa pri odhalení a
+            otvorí článok na Wikipédii (alebo zdrojovú stránku) k
+            položke, aby si si o nej mohol prečítať viac.</li>
+        </ul>
+        <p>Hrať sa dá dvoma spôsobmi:</p>
+        <ul>
+            <li><strong>Pre učenie:</strong> keď položku nepoznáš, odhal
+            odpoveď a klikni na odkaz <em>zistiť viac</em>, aby si si o
+            nej prečítal. Každé vystavenie posilňuje spojenie medzi
+            obrazom a názvom.</li>
+            <li><strong>Pre vlastný test:</strong> keď ti kategória príde
+            známa, prejdi ju a pozri, koľko z nej dokážeš pomenovať bez
+            odhalenia.</li>
+        </ul>
+
+        <h2>Prečo to funguje</h2>
+        <p>Toto je jednoduchá forma <em>aktívneho vybavovania</em>
+        &mdash; ťahania informácií z pamäte namiesto opakovaného čítania.
+        <em>Testovací efekt</em>, dobre zdokumentovaný v kognitívnej
+        psychológii, ukazuje, že vybavovacia prax vytvára trvalejšie
+        pamäťové stopy než samotné opakované vystavovanie.</p>
+        <p>Keďže je každý podnet obraz, hra využíva aj <em>efekt
+        nadradenosti obrazu</em>: obrázky sa kódujú bohatšie než slová a
+        ľahšie sa neskôr vybavujú. Pomenovanie položky je forma
+        <em>vybavovania s nápovedou</em>, ktorá leží medzi jednoduchým
+        rozpoznaním (&bdquo;videl som to už?&ldquo;) a <em>voľným
+        vybavovaním</em> bez pomoci.</p>
+        <p>Krátke a časté sedenia fungujú lepšie než dlhé &mdash;
+        <em>efekt rozloženia</em>. Pár minút denne stačí.</p>
     """,
     label_theme="téma",
     label_about="o memi",
