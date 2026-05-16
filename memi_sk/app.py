@@ -13,6 +13,14 @@ config = MemiConfig(
     favicon_color="#0B4EA2",
     sponsor_url="https://github.com/sponsors/filias",
     sponsor_text="podporiť",
+    related_sites=[
+        {"name": "memi", "url": "https://memi.click"},
+        {"name": "memi portugal", "url": "https://pt.memi.click"},
+        {"name": "memi lisboa", "url": "https://lx.memi.click"},
+        {"name": "memi US", "url": "https://us.memi.click"},
+        {"name": "memi Mallorca", "url": "https://ml.memi.click"},
+    ],
+    label_related_sites="ďalšie hry memi",
     about_html="""
         <p>Memi Slovensko je pamäťová hra o Slovensku.</p>
         <p>Vyber kategóriu, pozri sa na obrázok a skús uhádnuť, čo to je,
