@@ -1,4 +1,4 @@
-"""Memi Slovensko - precvič si pamäť o Slovensku."""
+"""Memi Slovakia - practice your memory about Slovakia."""
 
 import os
 

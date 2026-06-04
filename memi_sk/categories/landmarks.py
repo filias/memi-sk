@@ -1,6 +1,6 @@
-"""Pamiatky — historic monuments and landmarks of Slovakia."""
+"""Landmarks — historic monuments and landmarks of Slovakia."""
 
-PAMIATKY = [
+LANDMARKS = [
     # Castles
     "Bratislavský hrad",
     "Hrad Devín",
@@ -58,7 +58,7 @@ WIKIPEDIA = {
 }
 
 # City — used as the tag
-MESTA = {
+CITIES = {
     "Bratislavský hrad": "Bratislava",
     "Hrad Devín": "Bratislava",
     "Stará radnica v Bratislave": "Bratislava",

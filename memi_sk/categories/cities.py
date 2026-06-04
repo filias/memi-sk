@@ -1,6 +1,6 @@
-"""Mestá — major Slovak cities."""
+"""Cities — major Slovak cities."""
 
-MESTA = [
+CITIES = [
     "Bratislava",
     "Košice",
     "Prešov",
@@ -34,8 +34,8 @@ WIKIPEDIA = {
     "Martin": "Martin, Slovakia",
 }
 
-# Region (kraj) each city belongs to — used as the tag
-KRAJE = {
+# Region each city belongs to — used as the tag
+REGIONS = {
     "Bratislava": "Bratislavský kraj",
     "Pezinok": "Bratislavský kraj",
     "Trnava": "Trnavský kraj",

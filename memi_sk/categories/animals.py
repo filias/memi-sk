@@ -1,6 +1,6 @@
-"""Zvieratá — native animals of Slovakia."""
+"""Animals — native animals of Slovakia."""
 
-ZVIERATA = [
+ANIMALS = [
     "Medveď hnedý",
     "Rys ostrovid",
     "Kamzík vrchovský tatranský",
@@ -43,7 +43,7 @@ WIKIPEDIA = {
 }
 
 # Latin scientific names — used as the tag
-LATINSKE = {
+LATIN_NAMES = {
     "Medveď hnedý": "Ursus arctos",
     "Rys ostrovid": "Lynx lynx",
     "Kamzík vrchovský tatranský": "Rupicapra rupicapra tatrica",

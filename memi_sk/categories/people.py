@@ -1,7 +1,7 @@
-"""Ľudia — historical and modern Slovak figures."""
+"""People — historical and modern Slovak figures."""
 
 # Pre-1918 figures (Great Moravia and Hungarian Kingdom era)
-HISTORICKE = [
+HISTORICAL = [
     "Pribina",
     "Ľudovít Štúr",
     "Janko Kráľ",
@@ -10,7 +10,7 @@ HISTORICKE = [
 ]
 
 # 20th century (1918–1989)
-MODERNE = [
+MODERN = [
     "Andrej Hlinka",
     "Milan Rastislav Štefánik",
     "Jozef Tiso",
@@ -24,7 +24,7 @@ MODERNE = [
 ]
 
 # Contemporary (1989–today)
-SUCASNI = [
+CONTEMPORARY = [
     "Peter Sagan",
     "Marián Hossa",
     "Pavol Demitra",
@@ -36,14 +36,14 @@ SUCASNI = [
     "Robert Fico",
 ]
 
-ALL = HISTORICKE + MODERNE + SUCASNI
+ALL = HISTORICAL + MODERN + CONTEMPORARY
 
 # Wikipedia article titles (where they differ from the display name)
 WIKIPEDIA: dict[str, str] = {}
 
 # Era — used as the tag
-OBDOBIA = {
-    **{p: "do roku 1918" for p in HISTORICKE},
-    **{p: "20. storočie" for p in MODERNE},
-    **{p: "súčasnosť" for p in SUCASNI},
+PERIODS = {
+    **{p: "do roku 1918" for p in HISTORICAL},
+    **{p: "20. storočie" for p in MODERN},
+    **{p: "súčasnosť" for p in CONTEMPORARY},
 }

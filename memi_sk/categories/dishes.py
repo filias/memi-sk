@@ -1,6 +1,6 @@
-"""Jedlá — traditional Slovak dishes and drinks."""
+"""Dishes — traditional Slovak dishes and drinks."""
 
-JEDLA = [
+DISHES = [
     "Bryndzové halušky",
     "Bryndza",
     "Trdelník",

@@ -1,6 +1,6 @@
-"""Kraje — administrative regions of Slovakia (8 NUTS-3 regions)."""
+"""Regions — administrative regions of Slovakia (8 NUTS-3 regions)."""
 
-KRAJE = [
+REGIONS = [
     "Bratislavský kraj",
     "Trnavský kraj",
     "Trenčiansky kraj",

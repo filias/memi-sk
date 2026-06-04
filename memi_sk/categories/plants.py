@@ -1,6 +1,6 @@
-"""Rastliny — native plants and trees of Slovakia."""
+"""Plants — native plants and trees of Slovakia."""
 
-RASTLINY = [
+PLANTS = [
     "Limba",
     "Plesnivec alpínsky",
     "Smrek obyčajný",
@@ -23,7 +23,7 @@ WIKIPEDIA = {
 }
 
 # Latin scientific names — used as the tag
-LATINSKE = {
+LATIN_NAMES = {
     "Limba": "Pinus cembra",
     "Plesnivec alpínsky": "Leontopodium nivale",
     "Smrek obyčajný": "Picea abies",

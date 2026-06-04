@@ -1,6 +1,6 @@
-"""Rieky — main rivers of Slovakia."""
+"""Rivers — main rivers of Slovakia."""
 
-RIEKY = [
+RIVERS = [
     "Dunaj",
     "Váh",
     "Hron",
@@ -25,7 +25,7 @@ WIKIPEDIA = {
 }
 
 # Length in km — used as the tag
-DLZKY = {
+LENGTHS = {
     "Dunaj": "2 850 km",
     "Váh": "403 km",
     "Hron": "298 km",
