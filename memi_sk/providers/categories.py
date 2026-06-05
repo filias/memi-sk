@@ -1,6 +1,6 @@
 """Slovak category providers."""
 
-from memi_engine import CategoryProvider, register
+from memi_engine import CategoryProvider, ScientificNameProvider, register
 from memi_engine import images
 
 from memi_sk.categories.regions import REGIONS, WIKIPEDIA as REGION_WIKI
@@ -99,30 +99,26 @@ class DishesProvider(CategoryProvider):
         return images.get_wikipedia_image(wiki)
 
 
-class AnimalsProvider(CategoryProvider):
+class AnimalsProvider(ScientificNameProvider):
     key = "príroda:zvieratá"
     items = ANIMALS
     override_name = True
+    scientific_names = ANIMAL_LATIN
 
     def get_image(self, item):
         wiki = ANIMAL_WIKI.get(item, item)
         return images.get_wikipedia_image(wiki)
 
-    def get_tag(self, item):
-        return ANIMAL_LATIN.get(item)
 
-
-class PlantsProvider(CategoryProvider):
+class PlantsProvider(ScientificNameProvider):
     key = "príroda:rastliny"
     items = PLANTS
     override_name = True
+    scientific_names = PLANT_LATIN
 
     def get_image(self, item):
         wiki = PLANT_WIKI.get(item, item)
         return images.get_wikipedia_image(wiki)
-
-    def get_tag(self, item):
-        return PLANT_LATIN.get(item)
 
 
 class PeopleProvider(CategoryProvider):
