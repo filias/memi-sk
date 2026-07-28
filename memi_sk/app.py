@@ -8,6 +8,10 @@ from memi_engine import MemiConfig, create_app
 import memi_sk.providers  # noqa: F401
 
 config = MemiConfig(
+    analytics_html=(
+        '<script data-goatcounter="https://memi-sk.goatcounter.com/count"'
+        ' async src="//gc.zgo.at/count.js"></script>'
+    ),
     title="memi slovensko",
     subtitle="precvič si pamäť",
     favicon_color="#0B4EA2",
