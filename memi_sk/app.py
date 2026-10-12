@@ -13,6 +13,9 @@ config = MemiConfig(
         '<script data-goatcounter="https://memi-sk.goatcounter.com/count"'
         ' async src="//gc.zgo.at/count.js"></script>'
     ),
+    # What the page tells Google and screen readers it is: this game
+    # is Slovak, not the engine's default English.
+    html_lang="sk",
     title="memi slovensko",
     subtitle="precvič si pamäť",
     favicon_color="#0B4EA2",
