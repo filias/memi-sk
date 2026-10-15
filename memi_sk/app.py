@@ -89,6 +89,7 @@ config = MemiConfig(
     label_click_for_new="klikni znova pre ďalší",
     label_back="späť k hre",
     label_more="zistiť viac",
+    label_all="všetky",
     done_html="""
         <svg width="200" height="180" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
             <defs>
