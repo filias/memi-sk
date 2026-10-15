@@ -40,10 +40,17 @@ from memi_sk.categories.people import (
 )
 
 
+# Slovakia. Wikidata coordinates outside it belong to something other than
+# the place on the card, so they get no map.
+SLOVAKIA_BOUNDS = ((47.7, 49.7), (16.8, 22.6))
+
+
 class RegionsProvider(CategoryProvider):
     key = "geografia:kraje"
     items = REGIONS
     override_name = True
+    map_zoom = 8
+    map_bounds = SLOVAKIA_BOUNDS
 
     def get_image(self, item):
         wiki = REGION_WIKI.get(item, item)
@@ -54,6 +61,8 @@ class CitiesProvider(CategoryProvider):
     key = "geografia:mestá"
     items = CITIES
     override_name = True
+    map_zoom = 12
+    map_bounds = SLOVAKIA_BOUNDS
 
     def get_image(self, item):
         wiki = CITY_WIKI.get(item, item)
@@ -80,6 +89,8 @@ class LandmarksProvider(CategoryProvider):
     key = "kultúra:pamiatky"
     items = LANDMARKS
     override_name = True
+    map_zoom = 16
+    map_bounds = SLOVAKIA_BOUNDS
 
     def get_image(self, item):
         wiki = LANDMARK_WIKI.get(item, item)

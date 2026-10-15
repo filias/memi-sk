@@ -16,6 +16,9 @@ config = MemiConfig(
     # What the page tells Google and screen readers it is: this game
     # is Slovak, not the engine's default English.
     html_lang="sk",
+    # Details panel beside the card on reveal: the Wikipedia intro (in
+    # Slovak where it exists) and, for places, a map.
+    layout="enriched",
     title="memi slovensko",
     subtitle="precvič si pamäť",
     favicon_color="#0B4EA2",
@@ -90,6 +93,8 @@ config = MemiConfig(
     label_back="späť k hre",
     label_more="zistiť viac",
     label_all="všetky",
+    label_open_map="otvoriť mapu",
+    label_listen="vypočuť",
     done_html="""
         <svg width="200" height="180" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
             <defs>
