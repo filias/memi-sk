@@ -7,12 +7,32 @@ from memi_engine import MemiConfig, create_app
 # Import providers to register them
 import memi_sk.providers  # noqa: F401
 
+# The home page opens on the menu, and its empty card shows Slovakia's outline in its flag above
+# "vyber kategóriu". The engine has no setting for that, so this rides on
+# analytics_html (raw HTML at the bottom of every page, after app.js); loading
+# a category replaces the card's text, so the map goes with it.
+# static/flag-map-slovakia.svg: Wikimedia Commons, "Flag-map of Slovakia.svg" by Stasyan117, CC BY-SA 4.0.
+HOME_CARD_HTML = """
+<style>
+    #status.home { width: 100%; text-align: center; }
+    #status .home-map { display: block; max-width: 80%; max-height: calc(min(500px, 90vw) * 0.6); margin: 0 auto 1.5rem; }
+</style>
+<script>
+(function () {
+    var status = document.getElementById('status');
+    if (status && status.textContent.trim() === 'vyber kategóriu') {
+        status.classList.add('home');
+        status.insertAdjacentHTML('afterbegin', '<img class="home-map" src="/static/flag-map-slovakia.svg" alt="Slovensko">');
+    }
+})();
+</script>
+"""
+
 config = MemiConfig(
-    default_category="kultúra:pamiatky",
     analytics_html=(
         '<script data-goatcounter="https://memi-sk.goatcounter.com/count"'
         ' async src="//gc.zgo.at/count.js"></script>'
-    ),
+    ) + HOME_CARD_HTML,
     # What the page tells Google and screen readers it is: this game
     # is Slovak, not the engine's default English.
     html_lang="sk",
@@ -77,6 +97,8 @@ config = MemiConfig(
         vybavovaním</em> bez pomoci.</p>
         <p>Krátke a časté sedenia fungujú lepšie než dlhé &mdash;
         <em>efekt rozloženia</em>. Pár minút denne stačí.</p>
+
+        <p>Mapa s vlajkou na úvodnej stránke: <a href="https://commons.wikimedia.org/wiki/File:Flag-map_of_Slovakia.svg">Stasyan117</a>, CC BY-SA 4.0.</p>
     """,
     label_theme="téma",
     label_about="o memi",
