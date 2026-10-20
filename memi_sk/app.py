@@ -15,7 +15,7 @@ import memi_sk.providers  # noqa: F401
 HOME_CARD_HTML = """
 <style>
     #status.home { width: 100%; text-align: center; }
-    #status .home-map { display: block; max-width: 80%; max-height: calc(min(500px, 90vw) * 0.6); margin: 0 auto 1.5rem; }
+    #status .home-map, #done-art .home-map { display: block; max-width: 80%; max-height: calc(min(500px, 90vw) * 0.6); margin: 0 auto 1.5rem; }
 </style>
 <script>
 (function () {
@@ -117,35 +117,8 @@ config = MemiConfig(
     label_all="všetky",
     label_open_map="otvoriť mapu",
     label_listen="vypočuť",
-    done_html="""
-        <svg width="200" height="180" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <clipPath id="heart-clip">
-                    <path d="M40 68 C40 68 4 44 4 22 C4 10 14 2 24 2 C30 2 36 6 40 12 C44 6 50 2 56 2 C66 2 76 10 76 22 C76 44 40 68 40 68Z"/>
-                </clipPath>
-            </defs>
-            <g clip-path="url(#heart-clip)">
-                <rect x="0" y="0"  width="80" height="24" fill="#FFFFFF"/>
-                <rect x="0" y="24" width="80" height="24" fill="#0B4EA2"/>
-                <rect x="0" y="48" width="80" height="24" fill="#EE1C25"/>
-                <!-- Slovak coat of arms -->
-                <g transform="translate(14, 16)">
-                    <!-- red shield -->
-                    <path d="M0 0 L20 0 L20 22 Q20 30 10 34 Q0 30 0 22 Z"
-                          fill="#EE1C25" stroke="#FFFFFF" stroke-width="1"/>
-                    <!-- three blue hills -->
-                    <path d="M1.5 26 L6 19 L10 26 L14 19 L18.5 26 L18.5 32 L1.5 32 Z"
-                          fill="#0B4EA2"/>
-                    <!-- white double cross -->
-                    <rect x="9" y="4"  width="2" height="22" fill="#FFFFFF"/>
-                    <rect x="5" y="8"  width="10" height="2" fill="#FFFFFF"/>
-                    <rect x="3" y="15" width="14" height="2" fill="#FFFFFF"/>
-                </g>
-            </g>
-            <path d="M40 68 C40 68 4 44 4 22 C4 10 14 2 24 2 C30 2 36 6 40 12 C44 6 50 2 56 2 C66 2 76 10 76 22 C76 44 40 68 40 68Z"
-                  fill="none" stroke="var(--subtle, #888)" stroke-width="1.5"/>
-        </svg>
-    """,
+    # The "all done" card shows the same flag map as the home card.
+    done_html='<img class="home-map" src="/static/flag-map-slovakia.svg" alt="Slovensko">',
 )
 
 instance_static = os.path.join(os.path.dirname(__file__), "..", "static")
